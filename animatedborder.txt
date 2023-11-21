@@ -1,0 +1,31 @@
+How to Create an Animated Border Text Effect Using HTML and CSS
+
+
+
+Discover how to create a captivating animated border text effect using HTML and CSS. In this tutorial, 
+you'll learn step-by-step how to design an engaging visual element that combines a rotating border animation 
+with centered text within a box. By following these instructions, you'll grasp fundamental CSS styling 
+techniques to produce an eye-catching display—perfect for adding flair to your web projects. Let's delve into 
+crafting this dynamic effect together!
+
+
+
+
+
+Step 1   Begin by creating an HTML file.
+Step 2   Inside the file, start with a   DOCTYPE   declaration to define the document type as HTML.
+Step 3   Create an HTML structure with opening and closing  html ,  head , and  body  tags.
+Step 4   In the  head  section, define the styles for the webpage using CSS.
+Step 5   Set the background of the webpage to a specified image using the   background-image   property.
+Step 6   Specify the dimensions and appearance of a box element using CSS classes. 
+Step 7   Utilize CSS properties to position the box element in the center of the viewport.
+Step 8   Apply styles for an animated border effect using the  before   pseudo-element.
+Step 9   Use the   conic-gradient   property to create the animated border effect.
+Step 10   Define the keyframes for the rotation animation using  keyframes  .
+Step 11   Add text content within the box element using the  after   pseudo-element.
+Step 12   Style the text within the box element, including font size, color, and alignment.
+Step 13   Save the HTML file and open it in a web browser to view the animated border text effect.
+
+The explanation above provides a detailed step-by-step guide on how to create an animated border text effect using HTML and CSS, utilizing specific properties and styling to achieve the desired visual result.
+
+  

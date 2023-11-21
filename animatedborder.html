@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      /* Styling for the entire webpage */
+      body {
+        /* Setting the body to take the full height of the viewport */
+        height: 100vh;
+        /* Displaying content as a flex container */
+        display: flex;
+        align-items: center; /* Aligning items vertically */
+        justify-content: flex-start; /* Aligning items horizontally */
+        /* Background image for the body */
+        background-image: url("https://images.pexels.com/photos/303159/pexels-photo-303159.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+        background-size: cover; /* Covering the entire background */
+      }
+      
+      /* Styling for the box element */
+      .box {
+        /* Dimensions and appearance of the box */
+        width: 300px;
+        height: 300px;
+        border-radius: 5px;
+        background: #000; /* Background color */
+        position: relative; /* Positioning context for child elements */
+        display: flex;
+        justify-content: center; /* Centering content horizontally */
+        align-items: center; /* Centering content vertically */
+        overflow: hidden; /* Hiding overflowing content */
+        margin: 2rem; /* Margin around the box */
+      }
+      
+      /* Styling for the animated border effect */
+      .linear::before {
+        content: "";
+        position: absolute; /* Absolute positioning within the box */
+        width: 200%; /* Width greater than the box to create a circular effect */
+        height: 200%; /* Height greater than the box to create a circular effect */
+        /* Applying a conic gradient for the border effect */
+        background-image: conic-gradient(
+          rgb(168, 239, 255, 1) 20deg,
+          transparent 120deg
+        );
+        border-radius: 5px; /* Rounded border edges */
+        animation: rotate 4s linear infinite; /* Animating the rotation infinitely */
+      }
+      
+      /* Styling for the text within the box */
+      .linear::after {
+        content: "Trust Yourself"; /* Text content */
+        position: absolute; /* Absolute positioning within the box */
+        width: 280px; /* Width of the text */
+        height: 280px; /* Height of the text */
+        background: #000; /* Background color for the text */
+        color: #fff; /* Text color */
+        display: flex;
+        justify-content: center; /* Centering text horizontally */
+        align-items: center; /* Centering text vertically */
+        font-size: 2rem; /* Font size */
+        font-family: Georgia, 'Times New Roman', Times, serif; /* Font family */
+      }
+      
+      /* Keyframes for the rotation animation */
+      @keyframes rotate {
+        100% {
+          transform: rotate(360deg); /* Full rotation */
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>
+        <!-- Box element with the applied styles -->
+        <div class="box linear">
+          <!-- This is where the animated border and text are displayed -->
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
